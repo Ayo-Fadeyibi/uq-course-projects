@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", serif;
+    background-color: hsl(0, 4%, 95%);
+}
+
+a{
+    text-decoration: none;
+}
+
+.Header p{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Logo{
+    text-align: center;
+}
+
+.logo-El{
+    color: black;
+    font-weight: bold;
+}
+
+label{
+    font-size: small;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mini-Container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  20px 20px 5px rgba(0,0,0,0.1);
+}
+
+.Mini-Container::after{
+    content: "";
+    background-color: black;
+    border-radius: 3px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    transition: right 0.5s ease;
+}
+
+.Mini-Container.signup-active::after{
+    right: 50%;
+}
+
+.Mini-Container.signup-inactive::after{
+    right: 0%;
+}
+
+.container-SignIn a{
+    text-decoration: underline;
+    color: black;
+}
+
+.Inputs input{
+    width: 240px;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+.button{
+    margin-bottom: 10px;
+}
+
+.button button{
+    width: 250px;
+    padding: 6px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.Account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Account button{
+    padding: 5px;
+    border: 2px solid black;
+    background-color:white;
+    border-radius: 3px;
+}
+
+
+@media screen  and (max-width: 1250px){
+    .container{
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo-El{
+        font-size: 3vh;
+    }
+
+    
+    .Mini-Container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 70vh;
+        height: 95vh;
+    }
+    
+    .Mini-Container::after{
+        content: "";
+        background-color: black;
+        border-radius: 3px;
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        position: absolute;
+        transition: top 0.5s ease;
+    }
+
+    .Mini-Container.signup-active::after{
+        right: 0px;
+        top: 0%;
+    }
+    
+    .Mini-Container.signup-inactive::after{
+        top: 50%;
+    }
+    .Inputs input{
+        width: 100%;
+    }
+}
+

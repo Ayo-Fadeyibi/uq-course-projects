@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+.Men-Carousel {
+    width: 97vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.CaroImg {
+    width: 100%;   /* Cover full width */
+    height: 90vh;  /* Cover full height */
+    object-fit: contain; /* Ensures image scales without distortion */
+}
+
+.Carousel-Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-weight: bold;
+}
+
+.Carousel-Container button{
+    border: 2px solid black;
+    background-color: white;
+    width: 50px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.fits-of-week h2{
+    text-align: center;
+}
+
+/* Shop Our Collection Section Styling */
+.shop-collection {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.shop-collection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-item img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.collection-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.collection-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.collection-item:hover img {
+    transform: scale(1.05);
+}
+
+.Collection1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(red, white);
+}
+
+.Collection1 .Text button{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+}
+
+.Collection1 .Text button:hover{
+    background-color: white;
+    color: black;
+}
+
+.Collection1 p{
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.bigCollection {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.shop-collection h2 {
+    grid-column: span 2;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Collection2 {
+    grid-column: 1 / 2;
+    height: 40em;
+    grid-row: span 2;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Images/Models/NewBalance-Men.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Collection3 {
+    grid-column: 2 / 3;
+    grid-row: auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    background-image: url("../Images/Models/Men-Adidas-Samba.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Collection4 {
+    grid-column: 2 / 3;
+    grid-row: auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    background-image: url("../Images/Models/pumaMenSpeed.avif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Collection2 p, .Collection4 p,
+.Collection3 p {
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.Collection2 button,.Collection4 button, 
+.Collection3 button {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Collection2 button:hover,.Collection4 button:hover, 
+.Collection3 button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design for Tablets and Smaller Devices */
+@media (max-width: 1250px) {
+
+  .Men-Carousel {
+    width: 98vw;
+    height: auto;
+  }
+
+  .CaroImg {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .Carousel-Container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Carousel-Container button {
+    width: 40px;
+    padding: 8px;
+  }
+
+  .fits-of-week{
+    margin-top: 100px;
+  }
+
+  .collection-grid {
+    padding: 0 10px;
+  }
+
+  .collection-item img {
+    width: 60%;
+  }
+
+  .Collection1 img{
+    width: 50%;
+  }
+
+  .Collection3, .Collection4{
+    height: 50vh;
+  }
+
+  .Collection1 p,
+  .Collection2 p,
+  .Collection3 p,
+  .Collection4 p {
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .Collection1 .Text button,
+  .Collection2 button,
+  .Collection3 button,
+  .Collection4 button {
+    width: 18vh;
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .bigCollection {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .Collection2,
+  .Collection3,
+  .Collection4 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Collection3,
+  .Collection4 {
+    grid-column: 1 / -1;
+  }
+
+  .shop-collection h2 {
+    font-size: 1.5rem;
+  }
+
+  .collection-item p {
+    font-size: 1rem;
+  }
+}

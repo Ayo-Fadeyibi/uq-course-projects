@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Women</title>
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/women.css">
+<link rel="stylesheet" href="./css/ShoppingItem.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<body>
+
+    <!-- This header contains all the navigation links and logos-->
+    <header class="Navigation">
+        <nav class="Nav">
+            <div class="Logo">
+              <a href="index.html" class="logo-link">Sneakers</a>
+            </div>
+
+            <ul class="navigation_UnorderedList">
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Marketplace.html">Marketplace</a></li>
+            </ul>
+
+            <div class="Input">
+                <div class="Search">
+                    <Input type="text" placeholder="Search"></Input>
+                    <button onclick="SearchProducts()" class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="Links-Mini">
+                    <a href="SignIn.html"><i class="fa-solid fa-user"></i></i></a>
+                    <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="Bar" onclick="toggleMenu()">
+                <div class="bar-btn"></div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- This section contains the looping video and text-->
+    <section class="Women_Video">
+        <video autoplay muted loop>
+            <source src="./Videos/6029469_people_person_young_h46d07a46V0043103720p5000br.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="Women_Video-text">
+            <h2>Step into Style</h2>
+            <p>Discover the latest trends in footwear.</p>
+        </div>
+    </section>
+
+    <!-- This contains the content of the women page-->
+    <div class="WomenContent">
+        <h1>Shop our Latest Collection</h1>
+        <div class="Collection1">
+            <img src="./Images/Models/Model1.jpg" alt="">
+            <div class="Text">
+                <p>Puma Suede Classic</p>
+                <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+            </div>
+        </div>
+        <div class="Collection2">
+                <p>The New Balance 574</p>
+                <img src="./Images/Models/Model2.webp" alt="">
+                <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+        </div>
+        <div class="Collection3">
+            <div class="Text">
+            
+            </div>
+        </div>
+       <div class="Collection4">
+        <div class="Text">
+            <p>Adidas Samba</p>
+            <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+        </div>
+        <div class="CollecImg">
+            <div class="mini-collecimg">
+                <img src="./Images/Models/samba.avif" alt="">
+                <p>Timeless design</p>
+            </div>
+            <div class="mini-collecimg">
+                <img src="./Images/Models/Model5.avif" alt="">
+                <p>Vegan and Sustainable</p>
+            </div>
+            <div class="mini-collecimg">
+                <img src="./Images/Models/model8.jpg" alt="">
+                <p>A Timeless Streetwear Icon</p>
+            </div>
+        </div>
+       </div>
+        <div class="Collection5">
+                <p>Puma Speedcat</p>   
+                <img src="./Images/Models/Model7.png" alt="">
+                <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+        </div>
+    </div>
+
+
+    <!--Footer of the Webpage-->
+    <div class="Footer">
+        <div class="footer-content">
+            <ul>
+                <p>Shop</p>
+                <li>Find a store</li>
+                <li>Become a Member</li>
+                <li>Feeback</li>
+                <li>Promo Codes</li>
+            </ul>
+            <ul>
+                <p>About</p>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>News</li>
+            </ul>
+            <ul>
+                <p>Help</p>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Feeback</li>
+                <li>Returns</li>
+            </ul>
+            <ul class="social">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+<script src="./js/Navigation.js"></script>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAKERS</title>
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/ShoppingItem.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<body>
+
+    <!-- This header contains all the navigation links and logos-->
+    <header class="Navigation">
+        <nav class="Nav">
+            <div class="Logo">
+              <a href="index.html" class="logo-link">Sneakers</a>
+            </div>
+
+            <ul class="navigation_UnorderedList">
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Marketplace.html">Market Place</a></li>
+            </ul>
+
+            <div class="Input">
+                <div class="Search">
+                    <Input type="text" placeholder="Search"></Input>
+                    <button onclick="SearchProducts()" class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="Links-Mini">
+                    <a href="SignIn.html"><i class="fa-solid fa-user"></i></i></a>
+                    <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="Bar" onclick="toggleMenu()">
+                <div class="bar-btn"></div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- The Landing Page with carousel and content-->
+     <div class="Landing-Page">
+        <div class="Carousel">
+            <div class="Text-Img">
+                <div class="text">
+                    <p>NEW IN</p>
+                    <h1 id="h1" class="H1"></h1>
+                    <a href="">Buy Now <i class="fa-solid fa-arrow-right"></i></a>
+
+                    <div class="CarouselBtn">
+                        <button onclick="PrevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button onclick="NextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="Shoes">
+                <div class="img" id="imgCon">
+                    <img src="" alt="" id="image">
+                </div>
+            </div>
+        </div>
+        
+     </div>
+
+     <!--Content for the Home-Page-->
+    <div class="Content">
+       <h1 class="most">Most Popular&#x1F525</h1>
+       <div class="slider-container">
+        <button id="nextBtn"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="slider">
+            <div class="slide-track">
+                <a href="" class="Sneaker">
+                    <img src="./Images/Sneakers/Sneaker1.webp">
+                    <p>Jordan 1 Retro High OG</p>
+                    <p>A$ 180</p>
+                </a>
+    
+                <a href="" class="Sneaker">
+                    <img src="./Images/Sneakers/Sneaker2.webp">
+                    <p>Nike Dunk Low</p>
+                    <p>A$ 150</p>
+                </a>
+    
+                <a href="" class="Sneaker">
+                    <img src="./Images/Sneakers/Sneaker3.webp">
+                    <p>Adidas Samba OG</p>
+                    <p>A$ 120</p>
+                </a>
+    
+                <a href="" class="Sneaker">
+                    <img src="./Images/Sneakers/Sneaker4.webp">
+                    <p>Puma Speedcat OG</p>
+                    <p>A$ 170</p>
+                </a>
+    
+                <a href="" class="Sneaker">
+                    <img src="./Images/Sneakers/Sneaker5.webp">
+                    <p>Puma MB.04</p>
+                    <p>A$ 200</p>
+                </a>
+            </div>
+        </div>
+        <button id="prevBtn"><i class="fa-solid fa-arrow-right"></i></button>
+       </div>
+    
+
+        <div class="Adidas_Link">
+            <h1>Impossible is nothing</h1>
+            <a href="">Shop Adidas.</a>
+        </div>
+
+        <div class="collage">
+            <div class="Collage-Img1">
+                <h1>New Balance</h1>
+                <a href="">Shop New Balance</a>
+            </div>
+            <div class="Collage-Img2">
+                <h1>Nike</h1>
+                <a href="">Shop Nike</a>
+            </div>
+            <div class="Collage-Img3">
+                <h1>Retro</h1>
+                <a href="">Shop Retro</a>
+            </div>
+        </div>
+
+        <div class="Marquee">
+            <div class="Marquee-content">
+                <img src="./Images/Logos/Nike-Logo.png" alt="Nike Logo">
+                <img src="./Images/Logos/Adidas-Logo.png" alt="Adidas Logo">
+                <img src="./Images/Logos/NewBalance-Logo.png" alt="New Balance Logo">
+                <img src="./Images/Logos/Puma-Logo.png" alt="Puma Logo">
+        
+                <!-- Duplicate images for seamless effect -->
+                <img src="./Images/Logos/Nike-Logo.png" alt="Nike Logo">
+                <img src="./Images/Logos/Adidas-Logo.png" alt="Adidas Logo">
+                <img src="./Images/Logos/NewBalance-Logo.png" alt="New Balance Logo">
+                <img src="./Images/Logos/Puma-Logo.png" alt="Puma Logo">
+
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!--Footer of the Webpage-->
+    <div class="Footer">
+        <div class="footer-content">
+            <ul>
+                <p>Shop</p>
+                <li>Find a store</li>
+                <li>Become a Member</li>
+                <li>Feeback</li>
+                <li>Promo Codes</li>
+            </ul>
+            <ul>
+                <p>About</p>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>News</li>
+            </ul>
+            <ul>
+                <p>Help</p>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Feeback</li>
+                <li>Returns</li>
+            </ul>
+            <ul class="social">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+<script src="./js/Navigation.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/Shopping.js"></script>
+</html>

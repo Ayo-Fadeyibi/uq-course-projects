@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/Market.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<body>
+    <!-- This header contains all the navigation links and logos-->
+    <header class="Navigation">
+        <nav class="Nav">
+            <div class="Logo">
+              <a href="index.html" class="logo-link">Sneakers</a>
+            </div>
+
+            <ul class="navigation_UnorderedList">
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Marketplace.html">Marketplace</a></li>
+            </ul>
+
+            <div class="Input">
+                <div class="Search">
+                    <Input type="text" placeholder="Search"></Input>
+                    <button onclick="SearchProducts()" class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="Links-Mini">
+                    <a href="SignIn.html"><i class="fa-solid fa-user"></i></i></a>
+                    <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="Bar" onclick="toggleMenu()">
+                <div class="bar-btn"></div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section class="marketplace">
+        <h1>Market Place</h1>
+        <div class="filters">
+            <select id="brandFilter">
+                <option value="all">Brands</option>
+                <option value="Nike">Nike</option>
+                <option value="Adidas">Adidas</option>
+                <option value="Puma">Puma</option>
+            </select>
+            <select id="sizeFilter">
+                <option value="all">Size</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select id="newFilter">
+                <option value="all">New</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="product-list" id="productList"></div>
+    </section>
+
+    <section class="bid">
+        <h2>Bid</h2>
+        <div class="bid-details">
+           
+            <div class="mini-header">
+                    <p class="Live">Live.</p>
+
+                    <div class="Buttons">
+                        <button id="nextButn1" class="nextButn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id="prevButn1" class="prevButn"><i class="fa-solid fa-arrow-right"></i></button>      
+                    </div>
+            </div>
+
+            <div class="SliderContainer">
+                  
+                    <div class="Slidr">
+                        <div class="SlideTrack" id="SlideTrack1">
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker1.webp">
+                                <p class="bidd1">Jordan 1 Retro High OG</p>
+                                <p class="bidd">Current Bid: $180</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker2.webp">
+                                <p class="bidd1">Nike Dunk Low</p>
+                                <p class="bidd">Current Bid: $120</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker3.webp">
+                                <p class="bidd1">Adidas Samba OG</p>
+                                <p class="bidd">Current Bid: $100</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker4.webp">
+                                <p class="bidd1">Puma Speedcat OG</p>
+                                <p class="bidd">Current Bid: $90</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker5.webp">
+                                <p class="bidd1">Puma MB.04</p>
+                                <p class="bidd">Current Bid: $130</p>
+                                <button>Bid</button>
+                            </a>
+
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker1.webp">
+                                <p class="bidd1">Jordan 1 Retro High OG</p>
+                                <p class="bidd">Current Bid: $280</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker2.webp">
+                                <p class="bidd1">Nike Dunk Low</p>
+                                <p class="bidd">Current Bid: $100</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker3.webp">
+                                <p class="bidd1">Adidas Samba OG</p>
+                                <p class="bidd">Current Bid: $80</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker4.webp">
+                                <p class="bidd1">Puma Speedcat OG</p>
+                                <p class="bidd">Current Bid: $70</p>
+                                <button>Bid</button>
+                            </a>
+                
+                            <a href="" class="sneaker1 sneakr">
+                                <img src="./Images/Sneakers/Sneaker5.webp">
+                                <p class="bidd1">Puma MB.04</p>
+                                <p class="bidd">Current Bid: $180</p>
+                                <button>Bid</button>
+                            </a>
+                        </div>
+                    </div>
+                  
+            </div>
+                
+        </div>
+
+    </section>
+
+    <section class="top-selling">
+        <div class="mini-header">
+                    <h2>Top Selling</h2>
+
+                    <div class="Buttons">
+                        <button id="nextButn2" class="nextButn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id="prevButn2" class="prevButn"><i class="fa-solid fa-arrow-right"></i></button>      
+                    </div>
+        </div>
+
+        <div class="SliderContainer">
+                  
+                    <div class="Slidr">
+                        <div class="SlideTrack" id="SlideTrack2">
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker1.webp">
+                                <p>Jordan 1 Retro High OG</p>
+                                <button>A$ 180</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker2.webp">
+                                <p>Nike Dunk Low</p>
+                                <button>A$ 150</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker3.webp">
+                                <p>Adidas Samba OG</p>
+                                <button>A$ 120</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker4.webp">
+                                <p>Puma Speedcat OG</p>
+                                <button>A$ 170</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker5.webp">
+                                <p>Puma MB.04</p>
+                                <button>A$ 200</button>
+                            </a>
+
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker1.webp">
+                                <p>Jordan 1 Retro High OG</p>
+                                <button>A$ 180</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker2.webp">
+                                <p>Nike Dunk Low</p>
+                                <button>A$ 150</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker3.webp">
+                                <p>Adidas Samba OG</p>
+                                <button>A$ 120</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker4.webp">
+                                <p>Puma Speedcat OG</p>
+                                <button>A$ 170</button>
+                            </a>
+                
+                            <a href="" class="sneaker2 sneakr">
+                                <img src="./Images/Sneakers/Sneaker5.webp">
+                                <p>Puma MB.04</p>
+                                <button>A$ 200</button>
+                            </a>
+                        </div>
+                    </div>
+                  
+        </div>
+    </section>
+
+    <!--Footer of the Webpage-->
+    <div class="Footer">
+        <div class="footer-content">
+            <ul>
+                <p>Shop</p>
+                <li>Find a store</li>
+                <li>Become a Member</li>
+                <li>Feeback</li>
+                <li>Promo Codes</li>
+            </ul>
+            <ul>
+                <p>About</p>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>News</li>
+            </ul>
+            <ul>
+                <p>Help</p>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Feeback</li>
+                <li>Returns</li>
+            </ul>
+            <ul class="social">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./js/Navigation.js"></script>
+    <script src="./js/Shopping.js"></script>
+</body>
+</html>

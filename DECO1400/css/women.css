@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+/* Women_Video Section */
+.Women_Video {
+    position: relative;
+    width: 100%;
+}
+.Women_Video video {
+    width: 100%;
+    height: auto;
+}
+.Women_Video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+/* Women Content */  
+  .WomenContent{
+      margin-top: 10%;
+  }
+  
+  .WomenContent h1{
+      text-align: center;
+  }
+  
+  .Collection1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: pink;
+  }
+
+  .Collection1 .Text button{
+      background-color: black;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      width: 30%;
+      font-weight: bold;
+  }
+  
+  .Collection1 .Text button:hover{
+      background-color: white;
+      color: black;
+  }
+  
+  .Collection1 p{
+      font-weight: bold;
+      font-size: 5vh;
+  }
+
+  .Collection2{
+    background-color: rgb(241, 221, 195);
+  }
+  
+  .Collection2 p{
+      font-weight: bold;
+      font-size: 5vh;
+  }
+  
+  .Collection2 img{
+    width: 50%;
+  }
+
+  .Collection2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .Collection2 button{
+      background-color: black;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+
+.Collection2 button:hover{
+    background-color: white;
+    color: black;
+}
+
+.Collection3 {
+    margin-top: 30px;
+    background-image: url("../Images/Models/Model3.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    background-color: rgb(34, 28, 10);
+    background-attachment: fixed; 
+    height: 100vh; 
+    width: 100%;
+}
+
+.Collection3 .Text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Collection3 .Text p{
+    color: black;
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
+.Collection3 .Text button{
+    background-color: black;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+}
+
+.Collection4{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    background-color: white(111, 102, 102, 0.705);
+}
+
+.Collection4 .Text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Collection4 .Text button{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    font-size: 2vh;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+
+.Collection4 .Text p{
+    font-family: "Playwrite IT Moderna", cursive;
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: black;
+}
+
+.Collection4 .CollecImg{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.CollecImg p{
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    color: black;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+
+.Collection4 button{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.Collection4 .CollecImg img{
+    width: 100%;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.Collection5{
+    width: 100%;
+    background-color: white;
+    height: 50vh;
+    background-image: linear-gradient(red, white);
+}
+
+.Collection5{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Collection5 p{
+    font-weight: bold;
+    font-size: 5vh;
+    color: black;
+}
+
+.Collection5 img{
+    width: 25%;
+}
+
+.Collection5 button{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Collection5 button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1250px){
+
+    .Women_Video-text{
+        font-size: 2vh;
+    }
+
+    .Collection1 img{
+    width: 100%;
+    }
+  
+    .Collection1, .Collection2, .Collection3, .Collection4, .Collection5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .Collection2 img{
+        width: 100%;
+    }
+
+    .Collection5 img{
+        width: 100%;
+    }
+
+    .Collection1, .Collection2, .Collection3, .Collection4, .Collection5{
+        margin-top: 20px;
+    }
+}
+
+

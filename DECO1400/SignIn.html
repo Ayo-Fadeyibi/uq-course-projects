@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+</head>
+<link rel="stylesheet" href="./css/sigIn.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<body>
+
+    <!-- This header contains all the navigation links and logos-->
+    <header class="Navigation">
+        <nav class="Nav">
+            <div class="Logo">
+              <a href="index.html" class="logo-link">Sneakers</a>
+            </div>
+
+            <ul class="navigation_UnorderedList">
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Marketplace.html">Market Place</a></li>
+            </ul>
+
+            <div class="Input">
+                <div class="Search">
+                    <Input type="text" placeholder="Search"></Input>
+                    <button onclick="SearchProducts()" class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="Links-Mini">
+                    <a href="SignIn.html"><i class="fa-solid fa-user"></i></i></a>
+                    <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="Bar" onclick="toggleMenu()">
+                <div class="bar-btn"></div>
+            </div>
+            
+        </nav>
+    </header>
+
+        <!--Container for the SignIn and Sign-up Form-->
+        <div class="container">
+            <div class="Mini-Container" id="Mini">
+                <div class="container-SignIn">
+                    <div class="Header">
+                        <p>SIGN IN</p>
+                    </div>
+                    <div class="Inputs">
+                        <label for="">Email:</label><br>
+                        <input type="email"><br>
+                        <label for="">Password:</label><br>
+                     <input type="password">
+                    </div>
+                   <div class="button">
+                    <button onclick="SignIn">Sign In</button>
+                   </div>
+                   <a href="#">Can't remember password?</a>
+                   <div class="Account">
+                    <p>Don't have an account?</p>
+                   <button onclick="moveSignUp()">Sign up</button>
+                   </div>
+                </div>
+                <div class="container-signUp">
+                    <div class="Header">
+                        <p>SIGN UP</p>
+                    </div>
+                    <div class="Inputs">
+                        <label for="">Email:</label><br>
+                        <input type="email"><br>
+                        <label for="">Password:</label><br>
+                     <input type="password">
+                    </div>
+                   <div class="button">
+                    <button onclick="SignIn">Sign Up</button>
+                   </div>
+                   <div class="Account">
+                    <p>Already have an account?</p>
+                    <button onclick="moveSignIn()">Sign In</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="./js/Sign.js"></script>
+    <script src="./js/Navigation.js"></script>
+    </html>
+</body>
+</html>

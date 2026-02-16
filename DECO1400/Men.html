@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Men</title>
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="./css/Men.css">
+<body>
+    <!-- This header contains all the navigation links and logos-->
+    <header class="Navigation">
+        <nav class="Nav">
+            <div class="Logo">
+              <a href="index.html" class="logo-link">Sneakers</a>
+            </div>
+
+            <ul class="navigation_UnorderedList">
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Marketplace.html">Marketplace</a></li>
+            </ul>
+
+            <div class="Input">
+                <div class="Search">
+                    <Input type="text" placeholder="Search"></Input>
+                    <button onclick="SearchProducts()" class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="Links-Mini">
+                    <a href="SignIn.html"><i class="fa-solid fa-user"></i></i></a>
+                    <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="Bar" onclick="toggleMenu()">
+                <div class="bar-btn"></div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="Men-Carousel">
+        <div class="Carousel-Container">
+            <img src="" alt="" id="ImgMen" class="CaroImg">
+            <div class="buttons">
+                <p id="MenP" class="MenP"></p>
+                <button onclick="Prev()"><i class="fa-solid fa-arrow-left"></i></button>
+                <button onclick="Next()"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fits of the Week Section -->
+    <section class="fits-of-week">
+        <h2>Shoes of the Week</h2>
+
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="./Images/Sneakers/womens-air-jordan-i-black-toe-release-date.avif" alt="Air Jordan">
+                <p>Air Jordan</p>
+            </div>
+            
+            <div class="collection-item">
+                <img src="./Images/Sneakers/Sneaker3.webp" alt="Nike Sneakers">
+                <p>Adidas Samba</p>
+            </div>
+            <div class="collection-item">
+                <img src="./Images/Sneakers/kisspng-adidas-superstar-adidas-stan-smith-sneakers-adidas-kaikkialla-removebg-preview.png" alt="Adidas Sneakers">
+                <p>Adidas Superstar</p>
+            </div>
+            <div class="collection-item">
+                <img src="./Images/Sneakers/Sneaker4.webp" alt="Converse Sneakers">
+                <p>Puma Speedcat</p>
+            </div>
+        </div>
+     
+    </section>
+
+    <!-- Shop Our Collection Section -->
+    <section class="shop-collection">
+        <h2>Shop Our Collection</h2>
+        
+        <div class="Collection1">
+            <img src="./Images/Models/Men-airJordan.webp" alt="">
+            <div class="Text">
+                <p>Nike Air Jordan</p>
+                <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+            </div>
+        </div>
+        
+        <div class="bigCollection">
+            <div class="Collection2">
+                <p>New Balance 574</p>
+                <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+            </div>
+    
+            <div class="Collection3">
+                <p>Adidas Samba</p>
+                <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+            </div>
+    
+            <div class="Collection4">
+                <p>Puma Speedcat</p>
+                <button>Buy Now <i class="fa-solid fa-right-long"></i></button>
+         
+            </div>
+        </div>
+      
+    </section>
+
+    <!--Footer of the Webpage-->
+    <div class="Footer">
+        <div class="footer-content">
+            <ul>
+                <p>Shop</p>
+                <li>Find a store</li>
+                <li>Become a Member</li>
+                <li>Feeback</li>
+                <li>Promo Codes</li>
+            </ul>
+            <ul>
+                <p>About</p>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>News</li>
+            </ul>
+            <ul>
+                <p>Help</p>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Feeback</li>
+                <li>Returns</li>
+            </ul>
+            <ul class="social">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+<script src="./js/Men.js"></script>
+<script src="./js/Navigation.js"></script>
+</html>
