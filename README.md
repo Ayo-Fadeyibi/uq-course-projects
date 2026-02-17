@@ -22,7 +22,7 @@ Projects in this repository reflect coursework and self-driven practice across t
 
 Throughout these projects, I have worked with:
 
-- **Languages:** JavaScript, HTML, CSS
+- **Languages:** JavaScript, HTML, CSS, React, React Native
 - **Concepts:** DOM Manipulation, Event Handling, Form Validation, Regex
 - **Tools:** Git, GitHub, VS Code
 - **Web APIs:** LocalStorage, Browser Event System
@@ -39,22 +39,6 @@ A front-end e-commerce application built to simulate a basic online shopping exp
 - Interactive UI behaviour
 - Event-driven logic
 - Structured component design
-
----
-
-### **Music Player**
-A browser-based music player implementing audio controls and dynamic UI updates.
-
-**Key Concepts:**
-- HTML Audio API
-- State management
-- Event handling
-- Dynamic interface updates
-
----
-
-### **Additional Exercises & Mini Projects**
-Various focused exercises and mini-projects designed to reinforce core programming concepts and JavaScript fundamentals.
 
 ---
 
