@@ -40,6 +40,8 @@ A front-end e-commerce application built to simulate a basic online shopping exp
 - Event-driven logic
 - Structured component design
 
+### **React Web App**
+### **React Native App**
 ---
 
 ## 🎯 Objectives of This Repository
